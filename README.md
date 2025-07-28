@@ -1,12 +1,22 @@
-# React + Vite
+# Smart Bin - Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is the React-based frontend for the Smart Bin project. It provides a simple UI to capture an object using the webcam, send it to the backend API, and display the predicted trash category.
 
-Currently, two official plugins are available:
+## Features
+- Webcam activation and live preview
+- Image capture and conversion to Base64
+- API integration with FastAPI backend for classification
+- Responsive UI with styled components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React (Vite)
+- HTML5 Video API
+- JavaScript (ES6), CSS
+- Fetch API for backend communication
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How It Works
+1. User clicks "Turn Camera On" -> webcam stream starts
+2. User clicks "Capture" -> frame is drawn to a hidden canvas and converted to an image
+3. The image is sent as a POST request to the backend
+4. Backend responds with predicted class -> UI updates classification
