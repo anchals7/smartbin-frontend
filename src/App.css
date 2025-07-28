@@ -1,0 +1,531 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  background-color: #6D72C3;
+
+  
+  --tree-one-top: #AADCD7;
+  --tree-one-trunk: #DCAC5F;
+  --tree-two-top: #307c7c;
+  --tree-two-trunk: #594A42;
+  --tree-three-top: #608445;
+  --tree-three-trunk: #6D5F58;
+  --tree-four-top: #C43C32;
+  --tree-five-top: #BABC5A;
+  --tree-five-trunk: #537335;
+  
+
+}
+.mainContainer {
+  margin: 0 auto;
+  background-color: #6D72C3;
+  padding: 5%;
+  
+  align-items: center;
+}
+
+.appName{
+  color: #fff;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #1D1128 0%, #673C8E 100%);
+  display: flex;
+  flex-direction: column; /* So h1 + waves stack */
+  align-items: center;
+  padding: 0px;
+}
+
+
+
+.appInfo {
+  color: #000;
+  margin: 0 auto;
+  height: 270px;
+  padding: 11px 53px 175px 20px;
+  align-items: center;
+  flex-shrink: 0;
+  background: #E5D4ED;
+  position: relative;
+}
+
+.mainProd {
+  
+  height: 267px;
+  padding: 19px 65px 100px 64px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #5941A9;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 230px;;
+}
+
+.picture video {
+  width: 100%;
+  max-width: 300px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background: black;
+}
+
+.controls button{
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 0px;
+}
+
+.classification {
+  
+  padding: 22px 511px 25px 20px;
+  align-items: center;
+  background: #514F59;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.oceanWaves {
+  position: relative;
+  width: 100%;
+  height: 60px; /* Adjust height */
+  overflow: hidden;
+  line-height: 0;
+}
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax > use {
+  animation: move-forever 12s linear infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -2s;
+  animation-duration: 5s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 3s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+
+.forest {
+  margin: 20px auto 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  transform: scale(0.8);
+}
+
+.tree {
+  position: absolute;
+  height: 100%;
+}
+
+.tree-one {
+  width: 27%;
+}
+
+.top-one {
+  position: absolute;
+  top: 2%; 
+  background-color: var(--tree-one-top);
+  height: 55%;
+  width: 100%;
+  border-radius: 37% 51% 34% 43% / 57% 64% 27% 20%;
+}
+
+.trunk-one {
+  position: absolute;
+  left: 40%;
+  bottom: 3%;
+  background-color: var(--tree-one-trunk);
+  height: 80%;
+  width: 10%;
+  z-index: 2;
+  border-radius: 100% 9% 51% 42% / 100% 100% 0% 0% ;
+}
+
+.trunk-one-bottom {
+  position: absolute;
+  left: 40%;
+  bottom: 2%;
+  background-color: var(--tree-one-trunk);
+  width: 10%;
+  height: 10%;
+  border-radius:  30% 70% 53% 47% / 76% 69% 31% 24%;
+}
+
+.branch-one-right {
+  position: absolute;
+  right: 20%;
+  top: 15%;
+  height: 50%;
+  width: 20%;
+}
+
+.branch-one-r {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(45deg);
+  background-color: var(--tree-one-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-2r {
+  height: 45%;
+  top: 32%;
+}
+
+.branch-one-left {
+  position: absolute;
+  right: 46%;
+  top: 20%;
+  height: 40%;
+  width: 20%;
+}
+
+.branch-one-l {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(315deg);
+  background-color: var(--tree-one-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-2l {
+  height: 65%;
+  top: 22%;
+  right: 100%;
+}
+
+.tree-two {
+  left: 17%;
+  width: 20%;
+}
+
+.top-two {
+  position: absolute;
+  top: 25%; 
+  background-color: var(--tree-two-top);
+  height: 55%;
+  width: 100%;
+  border-radius: 100% 36% 51% 42% / 100% 100% 33% 21% ;
+}
+
+.trunk-two {
+  position: absolute;
+  left: 40%;
+  bottom: 2%;
+  background-color: var(--tree-two-trunk);
+  height: 60%;
+  width: 10%;
+  z-index: 2;
+  border-radius: 0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.trunk-two-bottom {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  background-color: var(--tree-two-trunk);
+  width: 10%;
+  height: 10%;
+  border-radius:  30% 70% 53% 47% / 76% 69% 31% 24%;
+}
+
+.branch-two-right {
+  position: absolute;
+  right: 25%;
+  top: 35%;
+  height: 40%;
+  width: 20%;
+}
+
+.branch-two-r {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(45deg);
+  background-color: var(--tree-two-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-rs {
+  top: 20%;
+  right: 60%;
+  height: 45%;
+}
+
+.branch-rt {
+  top: 45%;
+  right: 60%;
+  height: 60%;
+}
+
+.branch-two-left {
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  height: 30%;
+  width: 20%;
+}
+
+.branch-two-l {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(315deg);
+  background-color: var(--tree-two-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-ls {
+  top: 20%;
+  right: 90%;
+  height: 65%;
+}
+
+.branch-lt {
+  top: 60%;
+  right: 80%;
+  height: 60%;
+}
+
+.tree-three {
+  width: 33%;
+  left: 30%;
+}
+
+.top-three {
+  position: absolute;
+  top: 0; 
+  background-color: var(--tree-three-top);
+  height: 55%;
+  width: 100%;
+  border-radius: 100% 79% 63% 54% / 100% 82% 46% 53%;
+  z-index: -1;
+}
+
+.trunk-three {
+  position: absolute;
+  left: 40%;
+  bottom: 6%;
+  background-color: var(--tree-three-trunk);
+  height: 80%;
+  width: 8%;
+  z-index: 2;
+  transform: rotate(3deg);
+  border-radius: 0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.trunk-three-bottom {
+  position: absolute;
+  left: 37%;
+  bottom: 3%;
+  background-color: var(--tree-three-trunk);
+  width: 8%;
+  height: 10%;
+  border-radius:  30% 70% 53% 47% / 76% 69% 31% 24%;
+}
+
+.branch-three-right {
+  position: absolute;
+  right: 25%;
+  top: 5%;
+  height: 60%;
+  width: 20%;
+}
+
+.branch-three-r {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(49deg);
+  background-color: var(--tree-three-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-three-rs {
+  top: 20%;
+  right: 68%;
+  height: 55%;
+}
+
+.branch-three-left {
+  position: absolute;
+  right: 50%;
+  top: 9%;
+  height: 53%;
+  width: 20%;
+}
+
+.branch-three-l {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(310deg);
+  background-color: var(--tree-three-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-three-ls {
+  top: 20%;
+  right: 90%;
+  height: 55%;
+}
+
+.tree-four {
+  width: 25%;
+  left: 58%;
+}
+
+.top-four {
+  position: absolute;
+  top: 10%; 
+  background-color: var(--tree-four-top);
+  height: 50%;
+  width: 90%;
+  border-radius: 100% 79% 63% 54% / 100% 89% 60% 53% ;
+  z-index: 1;
+}
+
+.trunk-four {
+  position: absolute;
+  left: 40%;
+  bottom: 6%;
+  background-color: var(--tree-one-trunk);
+  height: 70%;
+  width: 8%;
+  z-index: 2;
+  border-radius: 100% 9% 51% 42% / 100% 100% 0% 0%;
+}
+
+.trunk-four-bottom {
+  position: absolute;
+  left: 40%;
+  bottom: 3%;
+  background-color: var(--tree-one-trunk);
+  width: 8%;
+  height: 10%;
+  border-radius:  30% 70% 53% 47% / 76% 69% 31% 24%;
+}
+
+.tree-five {
+  width: 25%;
+  right: 0;
+}
+
+.top-five {
+  position: absolute;
+  top: 6%; 
+  background-color: var(--tree-five-top);
+  height: 60%;
+  width: 100%;
+  border-radius: 46% 100% 63% 47% / 100% 89% 46% 39%  ;
+  z-index: -1;
+}
+
+.trunk-five {
+  position: absolute;
+  left: 40%;
+  bottom: 8%;
+  background-color: var(--tree-five-trunk);
+  height: 60%;
+  width: 8%;
+  z-index: 2;
+  transform: rotate(-1deg);
+  border-radius: 0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.trunk-five-bottom {
+  position: absolute;
+  left: 41%;
+  bottom: 4%;
+  background-color: var(--tree-five-trunk);
+  width: 8%;
+  height: 10%;
+  transform: rotate(-1deg);
+  border-radius:  30% 70% 53% 47% / 76% 69% 31% 24%;
+}
+
+.branch-five-right {
+  position: absolute;
+  right: 23%;
+  top: 23%;
+  height: 60%;
+  width: 20%;
+}
+
+.branch-five-r {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(49deg);
+  background-color: var(--tree-five-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-five-rs {
+  top: 20%;
+  right: 55%;
+  height: 55%;
+}
+
+.branch-five-left {
+  position: absolute;
+  right: 56%;
+  top: 23%;
+  height: 53%;
+  width: 20%;
+}
+
+.branch-five-l {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  transform: rotate(310deg);
+  background-color: var(--tree-five-trunk);
+  border-radius:  0% 100% 35% 21% / 100% 100% 0% 0%;
+}
+
+.branch-five-ls {
+  top: 20%;
+  right: 90%;
+  height: 55%;
+}
+
+@media screen and (max-width: 992px){
+  .forest{
+    transform: scale(.6);
+  }
+}
+
+@media screen and (max-width: 600px){
+  .forest{
+    transform: scale(.5);
+  }
+}
+
